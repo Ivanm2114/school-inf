@@ -8,6 +8,7 @@ for i in range(n):
 print(*arr)
 
 maxNum = max(arr)
+print(arr.count(maxNum))
 
 for i in range(n):
     if arr[i] == maxNum:

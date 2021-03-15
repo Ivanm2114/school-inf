@@ -1,19 +1,13 @@
-n = int(input())
-
-arr = [int(input())]
+arr = list(map(int, input().split()))
 
 count = 1
 maximum = arr[0]
-for i in range(n - 1):
-    x = int(input())
-    arr.append(x)
-    if x > maximum:
-        maximum = x
+for i in arr:
+    if i > maximum:
+        maximum = i
         count = 1
-    elif x == maximum:
+    elif i == maximum:
         count += 1
 
-
-print(count)
-maxNum = max(arr)
-print(arr.count(maxNum))
+print("Значение", maximum)
+print("Количество", count)

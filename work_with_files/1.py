@@ -5,7 +5,7 @@ for line in fin.readlines():
     summ += int(line)
     count += 1
 fout = open('out1.txt', 'w')
-fout.write(str(summ) + '\n' + str(count) + '\n' + str(summ/count))
+fout.write('Summ is ' + str(summ) + '\nCount is ' + str(count) + '\nAverage is ' + str(summ/count))
 print(summ)
 print(count)
 fin.close()
